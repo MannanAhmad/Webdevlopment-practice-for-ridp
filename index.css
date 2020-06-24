@@ -18,3 +18,12 @@ p{
     text-align: center;
     color: whitesmoke;
 }
+img{
+    width: 80px;
+    float: right;
+    
+}
+#img{
+    margin-right: 25px ;
+    
+}
