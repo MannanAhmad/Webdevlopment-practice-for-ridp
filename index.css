@@ -27,3 +27,11 @@ img{
     margin-right: 25px ;
     
 }
+a :hover{
+    
+    /* width: 290px; */
+    color: rgb(236, 213, 213);
+    text-align: center;
+    padding-left: 50px;
+    background-color: rgb(19, 11, 11);
+}
