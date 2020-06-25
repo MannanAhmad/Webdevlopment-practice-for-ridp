@@ -1,0 +1,95 @@
+<Doctype html>
+<html>
+	<head>
+		<title>html form</title>
+		<style>
+			form{
+				width:500px;
+				border-top-left-radius:35px;
+				border-bottom-right-radius:55px;
+				border-top-right-radius:65px;
+				padding:10px;
+				margin:0 auto;
+				background:orange;
+			}
+			label{
+			font-weight:bold;
+			font-family:arial,verdana,sans-sarif;
+			color:green;
+			}
+			input[type="text"],input[type="password"],select,textarea{
+				width:400px;
+				border:none;
+				outline:none;
+				height:30px;
+			}
+			textarea{
+				resize:none;
+				border:1px solid blue;
+				height:100px;
+			}
+			input[type="submit"]{
+				background:red;
+				color:black;
+				width:300px;
+				height:50px;
+				font-size:30px;
+				font-weight:bold;
+				border:none;
+				border-radius:30px;
+			}
+			input[type:"text"]:focus,input[type="password"]:focus,select:focus{
+				background:blue;
+			}
+			input[type:"text"]:hover,input[type="password"]:hover{
+				background:brown;
+			}
+			.tab{
+			margin-top:20px;}
+		</style>
+	</head>
+	<body>
+		<form>
+		
+			<h1>FORM BY MANNAN</h1><hr/><br/>
+			<table>
+				<tr class="tab">
+					<td><label for="user">Username</label><br/><br/></td>
+					<td><input type="text" id="user" name="Username"/><br/><br/></td>
+				</tr>
+				<tr class="tab">
+					<td><label for="pass">PassWord</label><br/><br/></td>
+					<td><input type="password" id="pass" name="password"/><br/><br/></td>
+				</tr>
+				<tr class="tab">
+					<td><label>Gender</label><br/><br/></td>
+					<td>Male: <input type="radio" name="gender" value="Male"/><br/><br/>Female: <input type="radio" name="gender" value="Female"/><br/><br/></td>
+				</tr>
+				<tr class="tab">
+					<td><label>Skills</label><br/><br/></td>
+					<td>HTML:<input type="checkbox" name="skills" value="HTML"/><br/><br/> Javascript:<input type="checkbox" name="skills" value="Javascript"/><br/><br/></td>
+				</tr>
+				<tr class="tab">
+					<td><label for="cntry">Country</label><br/><br/></td>
+					<td>
+						<select id="cntry" name="country" style="font-weight:bold;">
+							<option value="" style="font-weight:bold;">Select your country</option>
+							<option>india</option>
+							<option>pakistan</option>
+							<option>England</option>
+							<option>NewZeeland</option>
+						</select>
+					<br/><br/></td>
+				</tr>
+				<tr class="tab">
+					<td><label for="cmnt">Comment</label><br/><br/></td>
+					<td><textarea id="cmnt" rows="10" cols="50" name="comments"></textarea><br/><br/></td>
+				</tr>
+				<tr class="tab">
+					<td><br/><br/></td>
+					<td><input type="submit" name="submit"/><br/><br/></td>
+				</tr>
+			</table>
+		</form>
+	<body/>
+</html>

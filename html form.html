@@ -33,41 +33,47 @@
 				background:green;
 			}
 		</style>
+		
 	</head>
 	<body>
-	<form>
-	<h1>Fill the Form Created By Mannan</h1><hr/><br/>
-		<table>
-			<tr>
-				<td><label for="user">Name</label></td>
-				<td><input type="text"id="user" name="user"/></td>
-			</tr>
-			<tr>
-				<td><label for="pass">Number</label></td>
-				<td><input type="number" id="pass" name="password"/></td>
-			</tr>
-			<tr>
-				<td><label>Courses</label></td>
-				<td>Bachelors : <input type="radio" name="Courses" value="Bachelors"/> <br/> Masters : <input type="radio" name="Courses" value="Masters"/><br/><br/></td>
-			</tr>
-			<tr>
-				<td><label>Subject</label></td>
-				<td>HTML : <input type="checkbox"  name="Subject" value="html"/> <br/> CSS : <input type="checkbox"  name="Subject" value="css"/> <br/> 
-				Javascript : <input type="checkbox"  name="Subject" value="javascript"/> <br/> PHP : <input type="checkbox"  name="Subject" value="php"/><br/><br/></td>
-			</tr>
+		<form action="values.php" method="POST">
+			<h1>Fill the Form Created By Mannan</h1><hr/><br/>
+				<table>
+					<tr>
+						<td><label for="user">Name</label></td>
+						<td><input type="text"id="user" name="user"/></td>
+					</tr>
+					<tr>
+						<td><label for="pass">Number</label></td>
+						<td><input type="number" id="pass" name="password"/></td>
+					</tr>
+					<tr>
+						<td><label>Courses</label></td>
+						<td>Bachelors : <input type="radio" name="Courses" value="Bachelors"/> <br/> Masters : <input type="radio" name="Courses" value="Masters"/><br/><br/></td>
+					</tr>
+					<tr>
+						<td><label>Subject</label></td>
+						<td>HTML : <input type="checkbox"  name="Subject" value="html"/> <br/> CSS : <input type="checkbox"  name="Subject" value="css"/> <br/> 
+						Javascript : <input type="checkbox"  name="Subject" value="javascript"/> <br/> PHP : <input type="checkbox"  name="Subject" value="php"/><br/><br/></td>
+					</tr>
+					
+					<tr>
+						<td><label for="comment">Description</label></td>
+						<td><textarea  rows="10" cols="40" id="comment"  name="Description" value="comment"></textarea></td>
+					</tr>
+					<tr>
+					<td></td>
+						<td>
+							<input type="submit" value="click to submit" name="submit-form"/>
+							
+							
+							
+						</td>
+					</tr>
+					
+				</table>
+			</form>
 			
-			<tr>
-				<td><label for="comment">Description</label></td>
-				<td><textarea  rows="10" cols="40" id="comment"  name="Description" value="comment"></textarea></td>
-			</tr>
-			<tr>
-			<td></td>
-				<td>
-					<input type="submit" value="click to submit" name="submit-form"/>
-				</td>
-			</tr>
-			
-		</table>
-	</form>
 	</body>
 </html>
+
