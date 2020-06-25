@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>HTML FORM</title>
+		<style>
+			form{
+				width: 500px;
+				background: silver;
+				padding: 30px;
+				margin: 0 auto;
+				border: 5px solid brown;
+			}
+			input[type="text"],input[type="number"],select{
+				width:300px;
+				border: none;
+				outline:none;
+			}
+			textarea{
+				resize:none;
+				border: 1px solid black;
+			}
+			input[type="submit"]{
+				background:brown;
+				color:white;
+				border: 1px solid black;
+				width:305px;
+				height:25px;
+			}
+			input[type:"text"]:focus,input[type="password"]:focus,select:focus{
+				background:orange;
+			}
+			input[type:"text"]:hover,input[type="password"]:hover{
+				background:green;
+			}
+		</style>
+	</head>
+	<body>
+	<form>
+	<h1>Fill the Form Created By Mannan</h1><hr/><br/>
+		<table>
+			<tr>
+				<td><label for="user">Name</label></td>
+				<td><input type="text"id="user" name="user"/></td>
+			</tr>
+			<tr>
+				<td><label for="pass">Number</label></td>
+				<td><input type="number" id="pass" name="password"/></td>
+			</tr>
+			<tr>
+				<td><label>Courses</label></td>
+				<td>Bachelors : <input type="radio" name="Courses" value="Bachelors"/> <br/> Masters : <input type="radio" name="Courses" value="Masters"/><br/><br/></td>
+			</tr>
+			<tr>
+				<td><label>Subject</label></td>
+				<td>HTML : <input type="checkbox"  name="Subject" value="html"/> <br/> CSS : <input type="checkbox"  name="Subject" value="css"/> <br/> 
+				Javascript : <input type="checkbox"  name="Subject" value="javascript"/> <br/> PHP : <input type="checkbox"  name="Subject" value="php"/><br/><br/></td>
+			</tr>
+			
+			<tr>
+				<td><label for="comment">Description</label></td>
+				<td><textarea  rows="10" cols="40" id="comment"  name="Description" value="comment"></textarea></td>
+			</tr>
+			<tr>
+			<td></td>
+				<td>
+					<input type="submit" value="click to submit" name="submit-form"/>
+				</td>
+			</tr>
+			
+		</table>
+	</form>
+	</body>
+</html>
