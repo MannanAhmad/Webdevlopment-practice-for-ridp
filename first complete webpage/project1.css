@@ -1,0 +1,136 @@
+*{
+	margin:0;
+	padding:0;
+}
+#container{
+	width:1200px;
+	margin: 0 auto;
+	border:1px solid black;
+	font-family:arial,verdana,sans-serif;
+}
+#header{
+	background:brown;
+	width:1180px;
+	padding:20px 10px;
+	color:white;
+	text-align:center;
+}
+#navigation{
+	background:orange;
+	width:1200px;
+}
+#navigation ul{
+	list-style:none;
+}
+#navigation ul li{
+	float:left;
+	width:240px;
+	padding:15px 0;
+	text-align:center;
+}
+#navigation ul li:hover{
+	background:#ffd280;
+	color:green;
+}
+#navigation a{
+	color:black;
+}
+#middle{}
+	#left{
+		width:800px;
+		height:600px;
+		float:left;
+	}
+		.post{
+			
+			margin:20px;
+			
+			
+		}
+		  .title{
+			background:brown;
+			padding:15px 10px;
+			color:white;
+			font-size:25px;
+			font-weight:bold;
+		  }
+		  .discription{
+			background:#f1f1f1;
+			padding:20px;
+		  }
+	#right{
+		
+		width:400px;
+		height:600px;
+		float:left;
+	}
+		#latest_post{
+			background:brown;
+			padding:15px 5px;;
+			margin: 20px 0;
+			margin-right:5px;
+			text-align:center;
+			color:white;
+			font-size:25px;
+			font-weight:bold;
+			
+		}
+		#post_group{
+			margin:10px 0;
+		}
+		.post_latest{
+			background:orange;
+			padding:10px 0;
+			margin: 10px 0;
+			margin-right:5px;
+			text-align:center;
+			color:black;
+			border-bottom:3px solid green;
+		}
+		.post_latest:hover{
+			background:brown;
+			color:white;
+			
+			
+		}
+		#news{
+		
+		}
+		.News{
+			text-align:center;
+			font-size:25px;
+			font-weight:bold;
+			border-bottom:3px dashed brown;
+			margin-top:10px;
+			color:white;
+			margin-right:5px;
+			background:brown
+		}
+		input[type="text"]{
+			width:395px;
+			height:30px;
+			margin: 10px 0;
+			border:1px solid black;
+
+		}
+		input[type="submit"]{
+			width:395px;
+			padding:10px 0;
+			background:orange;
+			color:black;
+			font-size:20px;
+			font-weight:bold;
+			border:2px solid black;
+		}
+		input[type="submit"]:hover{
+			background:brown;
+			color:white;
+		}
+#footer{
+	background:brown;
+	width:1200px;
+	
+	text-align:center;
+	color:white;
+	padding:15px 0;
+}	
