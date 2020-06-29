@@ -23,4 +23,10 @@ document.getElementById("total").innerHTML = " Total marks = " + totalMarks;
 let averageMarks = (63 + 58 + 61 + 67 + 62)/5;
 document.getElementById("average").innerHTML = " Average marks = " + averageMarks;
 
+// creating first function in JS.
 
+function sumOFTwoNumbers(first , second){
+    let add = first + second ;
+    document.getElementById("func").innerHTML = ("sum of " +first+" And " + second + " is = " + add);
+}
+ sumOFTwoNumbers(45,4);
