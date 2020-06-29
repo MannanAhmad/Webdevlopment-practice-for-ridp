@@ -30,3 +30,29 @@ function sumOFTwoNumbers(first , second){
     document.getElementById("func").innerHTML = ("sum of " +first+" And " + second + " is = " + add);
 }
  sumOFTwoNumbers(45,4);
+
+// Exploring Math functions in JS.
+//Power function
+document.getElementById("power").innerHTML = ("Value of " +5+" to the power " + 6 + " is = " + Math.pow(5,6));
+
+//square root function
+document.getElementById("sqroot").innerHTML = ("Squre root of " +81+" is = " + Math.sqrt(81));
+
+// Absolute value function
+document.getElementById("abs").innerHTML = ("Absolute value of " +(-43.63)+" is = " + Math.abs(-43.63));
+
+// Random number function
+let val = Math.random();
+document.getElementById("rndm").innerHTML = ("displaying random number = " + val );
+ 
+//ceil of random number
+document.getElementById("ceilrndm").innerHTML = ("displaying ceil of random number is = " + Math.ceil(val) );
+
+//floor of random number
+document.getElementById("floorrndm").innerHTML = ("displaying floor of random number is = " + Math.floor(val) );
+
+// Using sin function 
+document.getElementById("sin").innerHTML = ("The value of sin "+60+" is = " + Math.sin(60) );
+
+// Using sin function 
+document.getElementById("cos").innerHTML = ("The value of cos "+45+" is = " + Math.cos(45) );
