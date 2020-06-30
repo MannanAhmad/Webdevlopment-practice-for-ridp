@@ -10,39 +10,64 @@
 <body>
     <h1>Reading date and print in the console with the help of JS.</h1>
     <button onclick="PrintDate()">The date and time of today ?</button>
+    
     <h1>Print fibonacci series between 10 to 100 with the hlp of js.</h1>
     <button onclick="Fib()">CLick here to print fibonacci series</button>
+    
+    <h1>Use of try, catch and finally exeption handling in JS.</h1>
+    <p>Please input a number between 5 and 10:</p>
+    <input id="demo" type="text">
+    <button onclick="Test()">Test Input</button>
+    <p id="p01"></p>
+
     <script type="text/javascript">
         function PrintDate() {
             let now = new Date();
             console.log(now);
         }
+
         function Fib() {
-            
             var limit = prompt("Enter the limit 'n' to generate the fibonacci series:", " ");
-            
-            if(limit>=10 && limit<=100){
-            var f1 = 0;
-            var f2 = 1;
+            if (limit >= 10 && limit <= 100) {
+                var f1 = 0;
+                var f2 = 1;
 
-            document.write("The limit entered to generate the fibonacci series is: ", limit, "<br/>");
-            document.write("The fibonacci series : ");
-            document.write("", f1, " ");
-            document.write("", f2, " ");
+                document.write("The limit entered to generate the fibonacci series is: ", limit, "<br/>");
+                document.write("The fibonacci series : ");
+                document.write("", f1, " ");
+                document.write("", f2, " ");
 
-            var i, f3;
-            for (i = 2; i < limit; i++) {
-                f3 = f1 + f2;
-                document.write("", f3, " ");
-                f1 = f2;
-                f2 = f3;
-            } }
-            else{
+                var i, f3;
+                for (i = 2; i < limit; i++) {
+                    f3 = f1 + f2;
+                    document.write("", f3, " ");
+                    f1 = f2;
+                    f2 = f3;
+                }
+            }
+            else {
                 document.write("Please enter valid number between 10 to 100.");
             }
-            
-
         }
+            function Test() {
+                var x, message;
+                message = document.getElementById("p01");
+                message.innerHTML = "You enter correct value";
+                x = document.getElementById("demo").value;
+                try {
+                    if (x == "") throw "is empty";
+                    if (isNaN(x)) throw "is not a number";
+                    x = Number(x);
+                    if (x > 10) throw "is too high";
+                    if (x < 5) throw "is too low";
+                }
+                catch (err) {
+                    message.innerHTML = "Error: " + err + ".";
+                }
+                finally {
+                    document.getElementById("demo").value = "";
+                }
+            }
     </script>
 </body>
 
