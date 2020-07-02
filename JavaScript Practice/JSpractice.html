@@ -24,12 +24,28 @@
             font-size: 20px;
         }
 
-        input[type="button"] {
+        input[type="button"]{
             padding: 10px;
             width: 100px;
             margin-bottom: 10px;
             font-size: 15px;
             font-weight: bold;
+        }
+        p { 
+            display: block; 
+            padding: 20px; 
+            color: gree; 
+            width: 300px; 
+            border: 2px solid green; 
+            font-size: 25px; 
+            margin-top: 20px;
+        } 
+        button{
+            width: 200px;
+            padding: 15px;
+            margin-top: 10px;
+            font-size: 20px;
+            font-weight :bold;
         }
     </style>
 </head>
@@ -45,7 +61,10 @@
 
     <input type="button" value="FadeTo 50%" onclick="fadeToToggle('fadeTo', this)" />
     <div id="fadeTo">My Name is Sayed Mannan Ahmad.click above button to fadeTo my name.</div>
-
+<br><br>
+    <h1>2. Practice of Double Click property in JS.</h1>
+    <p>Sayed Mannan Ahmad</p> 
+    <button> Double click on me. </button> 
 </body>
 <script>
     // javascript function for fade effect toggling
@@ -70,6 +89,12 @@
             button.value = 'FadeTo 50%';
         }
     }
+    $(document).ready(function() { 
+            $("button").dblclick(function() { 
+                $("p").fadeOut(); 
+            }); 
+        }); 
+                     
 </script>
 
 </html>
