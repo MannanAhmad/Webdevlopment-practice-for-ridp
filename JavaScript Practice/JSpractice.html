@@ -1,0 +1,75 @@
+<html>
+
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>jQuery all effiects</TITLE>
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+        body,
+        input {
+            font-family: Helvetica, Arial;
+        }
+
+        #fade,
+        #fadeTo {
+            width: 400px;
+            height: 50px;
+            padding: 30px;
+            border: 1px solid black;
+            background-color: brown;
+            color: white;
+            font-size: 20px;
+        }
+
+        input[type="button"] {
+            padding: 10px;
+            width: 100px;
+            margin-bottom: 10px;
+            font-size: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>1. Practice of fadeIn, fadeOut and fadeTo property of JS.</h1>
+    <br><br>
+    <input type="button" value="Fade Out" onclick="fadeToggle('fade', this)" />
+    <br><br>
+
+    <div id="fade">My Name is Sayed Mannan Ahmad.click above button to fadeIn and fadeOut my name.</div>
+    <br>
+
+    <input type="button" value="FadeTo 50%" onclick="fadeToToggle('fadeTo', this)" />
+    <div id="fadeTo">My Name is Sayed Mannan Ahmad.click above button to fadeTo my name.</div>
+
+</body>
+<script>
+    // javascript function for fade effect toggling
+    function fadeToggle(div_id, button) {
+
+        if (button.value == 'Fade Out') {
+            $('#' + div_id).fadeOut('slow');
+            button.value = 'Fade In';
+        } else {
+            $('#' + div_id).fadeIn(2000);
+            button.value = 'Fade Out';
+        }
+    }
+
+    function fadeToToggle(div_id, button) {
+
+        if (button.value == 'FadeTo 50%') {
+            $('#' + div_id).fadeTo('slow', 0.5);
+            button.value = 'FadeTo 100%';
+        } else {
+            $('#' + div_id).fadeTo(4000, 1.0);
+            button.value = 'FadeTo 50%';
+        }
+    }
+</script>
+
+</html>
